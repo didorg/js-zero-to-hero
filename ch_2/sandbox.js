@@ -1,4 +1,4 @@
-// --- Control Flow --
+// --- structures that change the control flow --
 
 // --- for loops
 const names = ['shaun', 'mario', 'luigi'];
