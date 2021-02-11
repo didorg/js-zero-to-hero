@@ -25,9 +25,7 @@ const speak = function(name = 'luigi', time = 'night'){
 speak('shaun');
 
 /************************  Arrow Functions ***********************/
-
 // regular function
-
 // const calcArea = function(radius){
 //   return 3.14 * radius**2;
 // }
@@ -63,3 +61,30 @@ const bill = (products, tax) => {
 console.log(greet());
 console.log(bill([10,15,30], 0.2));
 /************************  **************** ***********************/
+
+// --- callbacks & forEach --- 
+// let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+
+// const logPerson = (person, index) => {
+//   console.log(`${index} - hello ${person}`);
+// }
+
+// people.forEach(person => {
+//   console.log(`hello ${person}`);
+// });
+// people.forEach(logPerson);
+
+// --- interacting with the browser ---
+const ul = document.querySelector('.people');
+
+const people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+
+let html = ``;
+
+people.forEach(person => {
+  // create html template for each person
+  html += `<li style="color: purple">${person}</li>`;
+});
+
+console.log(html);
+ul.innerHTML = html;
