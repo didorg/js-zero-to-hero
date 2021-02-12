@@ -27,3 +27,23 @@ console.log(`My name is ${user.name} and I am ${user.age}`)
 user.login();
 user.logout();
 user.logBlogs();
+
+/** ************************************************************************ */
+// Primitive vs Reference Types
+
+// primitive values
+let scoreOne = 50;
+let scoreTwo = scoreOne;
+console.log(' --- Primitive Types --- ');
+console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
+scoreOne = 100;
+console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
+
+// reference values
+console.log(' --- Reference Types --- ');
+userOne = { name: 'ryu', age: 30 };
+userTwo = userOne;
+console.log(userOne, userTwo);
+
+userOne.name = 'chun-li';
+console.log(userOne, userTwo);
