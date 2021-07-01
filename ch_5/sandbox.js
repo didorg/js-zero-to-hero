@@ -39,10 +39,10 @@ const para = document.querySelector('p');
 
 const paras = document.querySelectorAll('p');
 
-// paras.forEach(p => {
-//   console.log(p.innerText);
-//   p.innerText = 'new text!';
-// });
+paras.forEach(p => {
+  console.log(`%C ${p.innerText}`, "color: blue");
+  p.innerText = 'new text!';
+});
 
 const content = document.querySelector('.content');
 
